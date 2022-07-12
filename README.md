@@ -1,2 +1,2 @@
 # Lab_JPA
-Laboratório: Persiteência OO-Relacional com JPA, Hibernate e Spring Data
+Laboratório: Perssieência OO-Relacional com JPA, Hibernate e Spring Data
