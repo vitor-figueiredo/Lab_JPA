@@ -1,6 +1,7 @@
 package br.inatel.labs.labjpa;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,8 +38,11 @@ public class LoadingDemo {
 	public void demoLazyLoading() {
 		try {
 			NotaCompra nota = service.buscarNotaCompraPeloId( 1L );
+			
+			List<NotaCompraItem> lista = nota.getListaNotaCompraItem();
+			System.out.println( lista.toString() );
 
-			int tamanho = nota.getListaNotaCompraItem().size();
+			int tamanho = lista.size();
 
 			System.out.println( tamanho );
 
